@@ -42,7 +42,15 @@ h1 {
   -webkit-font-smoothing: auto;
 }
 
-.Buton{
+.button{
+background-color:#ffbb2f;
+color: var(--text-color-light);
+height: 3.5rem;
+display: inline-flex;
+align-items: center;
+padding: 0 2rem;
+border-radius: 0.25rem ;
+font: 500 1rem 'DM sans', sans-serif;
 }
 
 /* LAYOUT */
