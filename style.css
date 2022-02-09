@@ -1,18 +1,17 @@
- /*reset*/
- * {
-   margin: 0;
-   padding: 0;
-   box-sizing: 0;
- }
-
-a{
-  text-decoration: none ;
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
 }
 
+a {
+  text-decoration: none;
+}
 
 /*VARIAVEIS*/
- :root{
-   --hue: 159;
+:root {
+  --hue: 159;
   /* HSL color mode */
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
@@ -21,70 +20,113 @@ a{
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
-  --aleatorio-color: #ffbb2f
- }
+  --aleatorio-color: #ffbb2f;
+}
 
- img{
-   width: 50%; 
-   height: auto;
- }
+img {
+  width: 100%;
+  height: auto;
+}
 
- /*base*/
- body{
-   font: 400 1rem 'DM Sans' , sans-serif;
-   color: var(--text-color);
-   background: var(--body-color);
-   -webkit-font-smoothing: antialiased;
- }
- 
- h1{
-   font: 700 1.875rem "poppins", sans-serif;
-   color: var(--title-color);
-   -webkit-font-smoothing: auto;
- }
+/*base*/
+body {
+  font: 400 1rem 'DM Sans', sans-serif;
+  color: var(--text-color);
+  background: var(--body-color);
+  -webkit-font-smoothing: antialiased;
+}
 
- .Button {
-  
- }
+h1 {
+  font: 700 1.875rem 'poppins', sans-serif;
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
 
+.Buton{
+}
 
 /* LAYOUT */
 
- #header {
- }
+#header {
+  border-bottom: 1px solid #ffbb2f;
+  margin-bottom: 2rem;
+}
 
- nav {
-   height: 4.5rem;
-   align-items: center;
-   display: flex;
-   justify-content: space-between ;
- }
+nav {
+  height: 4.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
 
-.logo{
-  font: 700 1.31rem "poppins", sans-serif;
+.logo {
+  font: 700 1.31rem 'poppins', sans-serif;
   color: var(--title-color);
 }
 
-.logo span{
-  color: var(--aleatorio-color)
+.logo span {
+  color: var(--aleatorio-color);
 }
 
-.container{
-width: 100%;
-margin-left: 1.5rem;
-margin-right: 1.5rem;
+.container {
+  width: 100%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
-.width{
-  
+.grid {
+  display: grid;
+  gap: 2rem;
 }
 
+.section {
+  padding: 5rem 0;
+}
+
+.width {
+}
 
 /*HOME*/
+#home .container {
+  margin: 0;
+}
 
+#home .image{
+  position: relative;
+}
 
+#home .image::before{
+  content:'';
+  height: 100%;
+  width: 100%;
+  background:#ffbb2f;
+  position: absolute;
+  top: -16.8%;
+  left: 16.7%;
+  z-index:0;
+}
 
+#home .image img {
+  position: relative;
+  right: 2.93rem ;
+}
 
+#home .image img,
+#home .image::before {
+  border-radius: 0.25rem;
+}
 
+#home .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center ;
+}
 
+#home .text h1{
+  margin-bottom: 1rem;
+}
+
+#home .text p {
+margin-bottom: 2rem;
+}
 
